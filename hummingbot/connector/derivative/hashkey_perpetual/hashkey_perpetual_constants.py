@@ -82,9 +82,9 @@ MAX_REQUEST = 100
 
 RATE_LIMITS = [
     # Pool Limits
-    RateLimit(limit_id=REQUEST_WEIGHT, limit=90, time_interval=ONE_MINUTE),
-    RateLimit(limit_id=ORDERS_1MIN, limit=90, time_interval=ONE_MINUTE),
-    RateLimit(limit_id=ORDERS_1SEC, limit=30, time_interval=10),
+    RateLimit(limit_id=REQUEST_WEIGHT, limit=45, time_interval=ONE_MINUTE),
+    RateLimit(limit_id=ORDERS_1MIN, limit=45, time_interval=ONE_MINUTE),
+    RateLimit(limit_id=ORDERS_1SEC, limit=10, time_interval=10),
     # Weight Limits for individual endpoints
     RateLimit(limit_id=SNAPSHOT_PATH_URL, limit=MAX_REQUEST, time_interval=ONE_MINUTE,
               linked_limits=[LinkedLimitWeightPair(REQUEST_WEIGHT, weight=20)]),

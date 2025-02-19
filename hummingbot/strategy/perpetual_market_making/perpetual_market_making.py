@@ -920,7 +920,7 @@ class PerpetualMarketMakingStrategy(StrategyPyBase):
         if not to_defer_canceling:
             for order in self.active_orders:
                 self.cancel_order(self._market_info, order.client_order_id)
-                self.logger().info(f"Canceling active order {order.client_order_id}.")
+                # self.logger().info(f"Canceling active order {order.client_order_id}.") Commented out as many log prints
         else:
             self.logger().info(f"Not canceling active orders since difference between new order prices "
                                f"and current order prices is within "

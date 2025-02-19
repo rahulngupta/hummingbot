@@ -147,7 +147,7 @@ RATE_LIMITS = [
             
     RateLimit(limit_id=SERVER_TIME_PATH_URL, limit=LIMIT, time_interval=1),
              
-    RateLimit(limit_id=ORDER_URL, limit=3, time_interval=1),
+    RateLimit(limit_id=ORDER_URL, limit=1, time_interval=1),
              
     RateLimit(limit_id=CANCEL_ALL_OPEN_ORDERS_URL, limit=1, time_interval=1),
              

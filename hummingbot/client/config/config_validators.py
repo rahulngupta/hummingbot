@@ -16,8 +16,8 @@ def validate_exchange(value: str) -> Optional[str]:
     Restrict valid exchanges to the exchange file names
     """
     from hummingbot.client.settings import AllConnectorSettings
-    if value not in AllConnectorSettings.get_exchange_names():
-        return f"Invalid exchange, please choose value from {AllConnectorSettings.get_exchange_names()}"
+    # if value not in AllConnectorSettings.get_exchange_names():
+    #     return f"Invalid exchange, please choose value from {AllConnectorSettings.get_exchange_names()}"
 
 
 def validate_derivative(value: str) -> Optional[str]:

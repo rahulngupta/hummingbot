@@ -493,7 +493,7 @@ class AllConnectorSettings:
     def get_exchange_names(cls) -> Set[str]:
         return {
             cs.name for cs in cls.get_connector_settings().values()
-            if cs.type in [ConnectorType.Exchange, ConnectorType.CLOB_SPOT, ConnectorType.CLOB_PERP]
+            if cs.type in [ConnectorType.Exchange, ConnectorType.CLOB_SPOT, ConnectorType.CLOB_PERP, ConnectorType.Derivative]
         }.union(set(cls.paper_trade_connectors_names))
 
     @classmethod

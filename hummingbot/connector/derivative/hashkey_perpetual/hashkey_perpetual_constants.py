@@ -124,7 +124,7 @@ MAX_REQUEST = 100
 #               linked_limits=[LinkedLimitWeightPair(REQUEST_WEIGHT, weight=1)]),
 # ]
 
-LIMIT = 2
+LIMIT = 1
 TIME = 1 # 1 second
 RATE_LIMITS = [
     # Pool Limits
@@ -157,7 +157,7 @@ RATE_LIMITS = [
             
     RateLimit(limit_id=ACCOUNT_INFO_URL, limit=LIMIT, time_interval=1),
               
-    RateLimit(limit_id=POSITION_INFORMATION_URL, limit=LIMIT, time_interval=10),
+    RateLimit(limit_id=POSITION_INFORMATION_URL, limit=LIMIT, time_interval=5),
               
     RateLimit(limit_id=MARK_PRICE_URL, limit=LIMIT, time_interval=1),
              

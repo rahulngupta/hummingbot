@@ -157,7 +157,7 @@ RATE_LIMITS = [
             
     RateLimit(limit_id=ACCOUNT_INFO_URL, limit=LIMIT, time_interval=1),
               
-    RateLimit(limit_id=POSITION_INFORMATION_URL, limit=LIMIT, time_interval=1),
+    RateLimit(limit_id=POSITION_INFORMATION_URL, limit=LIMIT, time_interval=10),
               
     RateLimit(limit_id=MARK_PRICE_URL, limit=LIMIT, time_interval=1),
              
